@@ -1,5 +1,5 @@
 <?php
-?php
+
 // on paramètre mysqli pour afficher toutes les erreurs, et s'arrêter lorsqu'il y en a une
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 /* on déclare une variable $connection à la BDD de test (on crée un objet de connexion)
@@ -24,10 +24,11 @@ global $databaseConnection;
 
 /* A COMPLETER : remplacer les paramètres pour se connecter à votre base de données de pokémon */
 $databaseConnection = mysqli_connect(
-    'http://localhost/phpmyadmin/index.php?route=/database/sql&db=pokemontp',
+    'localhost',
     "root",
-    "null",
+    null,
     "pokemontp",
+    3306
 );
 
-
+?>
